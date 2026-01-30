@@ -1,39 +1,59 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+* body {
+  background-color: forestgreen;
+}
+* body samp {
+  background-color: rgb(238, 238, 238);
+  border-radius: 2px;
+}
+* body br {
+  border: none;
+}
+* body .headerbox {
+  background-color: white;
+}
+* body .headerbox header {
+  background-color: white;
+}
+* body .headerbox header nav {
+  display: flex;
+}
+* body .contentbox {
+  max-width: 90%;
+  background-color: white;
+  border: 2px;
+  border-radius: 5px;
+  border-color: black solid;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding: 10px;
+}
+* body .contentbox .content {
+  background-color: white;
+  border-radius: 5px;
+  display: inline;
+  position: relative;
+  left: 2%;
+}
+* body .contentbox .content section {
+  background-color: white;
+}
+* body .contentbox article {
+  background-color: white;
+  display: inline;
+}
+* body .footerbox {
+  margin: auto;
+}
+* body .footerbox footer {
+  background-color: forestgreen;
+}
+* body .footerbox footer p {
+  text-align: center;
 }
 
-body {
-    background-color: forestgreen;
-}
-
-header {
-    background-color: white;
-    position: sticky;
-    top: 0px;
-}
-
-.content {
-    position: relative;
-    left: 2%;
-    width: 95vw;
-    background-color: white;
-    border-radius: 5px;
-    display: inline;
-    border: 2px solid black;
-}
-
-samp {
-    background-color: rgb(238, 238, 238);
-    border-radius: 2px;
-}
-
-article {
-    background-color: white;
-    border-radius: 2px;
-    display: inline;
-}
-
-br {
-    border: none;
-}
+/*# sourceMappingURL=style.css.map */

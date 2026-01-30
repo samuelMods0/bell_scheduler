@@ -3,10 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quasimoto Test Page</title>
+    <title>Quasimoto Bell Services</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
-    <h1>Test Page</h1>
-    <a href="/">Home</a>
+    <div class="headerbox">
+        <header>
+            <h1>Quasimoto Bell Services</h1>
+            <nav>
+                <a href="/">HOME</a>
+                <a href="/login">LOGIN</a>
+                <a href="/sign-up">SIGN UP</a>
+                <a href="/about">ABOUT</a>
+            </nav>
+        </header>
+    </div>
+
+    <br>
+    
+    <div class="contentbox">
+	    <section>
+            <h3>Test Page</h3>
+	        <p>This page is meant as the control variable for styling and scripting.</p>
+	    </section>
+    </div>
+
+    <br>
+    
+    <div class="footerbox">
+        <footer>
+            <p>Contact us at <a href="https://orsleyway@gmail.com">orsleyway@gmail.com</a></p>
+        </footer>
+    </div>
 </body>
 </html>
