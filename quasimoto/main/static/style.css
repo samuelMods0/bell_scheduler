@@ -2,27 +2,27 @@
   margin: 0;
   padding: 0;
 }
-* body {
+
+body {
   background-color: forestgreen;
+  height: 1000vh;
 }
-* body samp {
+body samp {
   background-color: rgb(238, 238, 238);
   border-radius: 2px;
 }
-* body br {
-  border: none;
-}
-* body .headerbox {
+body header {
+  overflow: visible;
   background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
-* body .headerbox header {
-  background-color: white;
+body header nav {
+  float: right;
 }
-* body .headerbox header nav {
-  display: flex;
-}
-* body .contentbox {
-  max-width: 90%;
+body .contentbox {
+  max-width: 60ch;
   background-color: white;
   border: 2px;
   border-radius: 5px;
@@ -32,28 +32,25 @@
   margin-top: 10px;
   padding: 10px;
 }
-* body .contentbox .content {
-  background-color: white;
-  border-radius: 5px;
+body .contentbox section {
   display: inline;
-  position: relative;
-  left: 2%;
+  max-width: 45ch;
+  align-items: baseline;
 }
-* body .contentbox .content section {
-  background-color: white;
-}
-* body .contentbox article {
-  background-color: white;
-  display: inline;
-}
-* body .footerbox {
+body footer {
   margin: auto;
-}
-* body .footerbox footer {
   background-color: forestgreen;
 }
-* body .footerbox footer p {
+body footer p {
   text-align: center;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*
+[NOTE] {
+    to compile scss to css file (VS Code) {
+        press Ctrl+Shift+P, then Paste this into the Command Palette {
+            Live Sass: Compile Sass - Without Watch Mode
+        }
+    }
+}
+*//*# sourceMappingURL=style.css.map */

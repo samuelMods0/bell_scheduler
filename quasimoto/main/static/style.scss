@@ -1,76 +1,62 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 0; 
+}
+body {
+    background-color: forestgreen;
 
-    body {
+    samp {
+        background-color: rgb( 238, 238, 238);
+        border-radius: 2px;
+    }
+
+    header {
+        overflow: visible;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+
+        nav {
+            float: right;
+        }
+    }
+
+    .contentbox {
+        max-width: 60ch;
+
+        background-color: white;
+
+        border: 2px;
+        border-radius: 5px;
+        border-color: black solid;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        padding: 10px;
+
+        section {
+            display: inline;
+            max-width: 45ch;
+            align-items: baseline;
+        }
+    }
+
+    footer {
+        margin: auto;
         background-color: forestgreen;
 
-        samp {
-            background-color: rgb( 238, 238, 238);
-            border-radius: 2px;
+        p {
+            text-align: center;
         }
-
-        .headerbox {
-            background-color: white;
-
-            header {
-                background-color: white;
-                nav {
-                    display: flex;
-                }
-            }
-        }
-
-        .contentbox {
-            max-width: 90%;
-
-            background-color: white;
-
-            border: 2px;
-            border-radius: 5px;
-            border-color: black solid;
-
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 10px;
-            padding: 10px;
-
-            .content {
-                background-color: white;
-                border-radius: 5px;
-                display: inline;
-                position: relative;
-                left: 2%;
-
-                section {
-                    background-color: white;
-                }
-            }
-
-            article {
-                background-color: white;
-                display: inline;
-            }
-        }
-
-        .footerbox {
-            margin: auto;
-
-            footer {
-                background-color: forestgreen;
-
-                p {
-                    text-align: center;
-                }
-            }
-        }
+        
     }
 }
 
-
 /*
 [NOTE] {
-    to compile (VS Code) {
+    to compile scss to css file (VS Code) {
         press Ctrl+Shift+P, then Paste this into the Command Palette {
             Live Sass: Compile Sass - Without Watch Mode
         }
