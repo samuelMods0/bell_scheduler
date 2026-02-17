@@ -11,15 +11,15 @@ body {
     }
 
     header {
-        overflow: visible;
+        overflow-x: visible;
         background-color: white;
         position: sticky;
         top: 0;
         z-index: 100;
-
-        nav {
-            float: right;
-        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
     }
 
     .contentbox {
