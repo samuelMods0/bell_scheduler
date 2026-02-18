@@ -22,7 +22,3 @@ def login(response):
 
 def sign_up(response):
     return render(response, 'main/sign-up.html')
-
-def base_test(response):
-
-    return render(response, "main/base_test.html", {})
