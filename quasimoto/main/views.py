@@ -4,22 +4,25 @@ from django.http import HttpResponse
 # Create your views here.
 
 
-def index(request):
-    return render(request, 'index.html')
+def index(response):
+    return render(response, 'main/index.html')
 
 
-def test(request):
-    return render(request, 'test.html')
+def test(response):
+    return render(response, 'main/test.html')
 
 
-def about(request):
-    return render(request, 'about.html')
+def about(response):
+    return render(response, 'main/about.html')
 
 
-def login(request):
-    return render(request, 'login.html')
+def login(response):
+    return render(response, 'main/login.html')
 
 
-def sign_up(request):
-    return render(request, 'sign-up.html')
+def sign_up(response):
+    return render(response, 'main/sign-up.html')
 
+def base_test(response):
+
+    return render(response, "main/base_test.html", {})

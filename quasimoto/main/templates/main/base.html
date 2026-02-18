@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quasimoto Bell Services</title>
+    <title>Quasimodo Bell Services</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
 </head>
 <body>
     <header>
-        <h1>Quasimoto Bell Services</h1>
+        <h1>Quasimodo Bell Services</h1>
+        <img width="50" height="50" src="{% static 'images/hunchback_icon.png'%}">
         <nav>
             <a href="/">HOME</a>
             <a href="/login">LOGIN</a>
@@ -20,21 +21,9 @@
     </header>
     <main>
         <br>
-        <!-- all content below this -->
-    
-        <div class="contentbox"> 
-            <section>
-                <h3>Developer: Samuel Worsley</h3>
-                <p>
-                    Samuel Worsley started programming at 14, and enjoys making silly projects for fun.
-                    He created this project as a beginner-level project for Django, 
-                    but then started trying to do CSS too. 
-                    CSS styling is currently the leading cause of insanity among 16-year-old nerds.
-                </p>
-            </section>
-        </div>
+        {% block content %}
 
-        <!-- all content above this -->
+        {% endblock %}
         <br>
     </main>
     <footer>
